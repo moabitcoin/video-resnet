@@ -199,6 +199,6 @@ if __name__ == "__main__":
     arg("pkl", type=Path, help=".pkl file to read the R(2+1)D 34 layer weights from")
     arg("out", type=Path, help="prefix to save converted R(2+1)D 34 layer weights to")
     arg("--frames", type=int, choices=(8, 32), required=True, help="clip frames for video model")
-    arg("--classes", type=int, choices=(400, 487), required=True, help="classes in last layer")
+    arg("--classes", type=int, choices=(359, 400, 487), required=True, help="classes in last layer")
 
     main(parser.parse_args())
