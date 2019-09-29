@@ -7,7 +7,7 @@ Official implementation from FB provide pre-trained models as `.pkl` files. You 
 
 - [r2plus1d_34_clip8_ig65m_from_scratch](https://www.dropbox.com/s/y8vx3gihhsd8f5b/r2plus1d_34_clip32_ig65m_from_scratch_f102649996.pkl?)
 - [r2plus1d_34_clip8_ft_kinetics_from_ig65m](https://www.dropbox.com/s/p81twy88kwrrcop/r2plus1d_34_clip8_ft_kinetics_from_ig65m_%20f128022400.pkl)
-- [r2plus1d_34_clip32_ig65m_from_scratch](https://www.dropbox.com/s/y8vx3gihhsd8f5b/r2plus1d_34_clip32_ig65m_from_scratch_f102649996.pkl)
+- [r2plus1d_34_clip32_ig65m_from_scratch](https://www.dropbox.com/s/eimo232tqw8mwi9/r2plus1d_34_clip32_ig65m_from_scratch_f102649996.pkl)
 - [r2plus1d_34_clip32_ft_kinetics_from_ig65m](https://www.dropbox.com/s/z41ff7vs0bzf6b8/r2plus1d_34_clip32_ft_kinetics_from_ig65m_%20f106169681.pkl)
 
 ## PyTorch + ONNX Models :trophy:
