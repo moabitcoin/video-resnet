@@ -39,9 +39,9 @@ def blobs_from_pkl(path, num_classes):
         blobs = pkl["blobs"]
 
         assert "last_out_L" + str(num_classes) + "_w" in blobs, \
-            'Number of --classes argument doesnt matche the last linear layer in pkl'
+            "Number of --classes argument doesnt matche the last linear layer in pkl"
         assert "last_out_L" + str(num_classes) + "_b" in blobs, \
-            'Number of --classes argument doesnt matche the last linear layer in pkl'
+            "Number of --classes argument doesnt matche the last linear layer in pkl"
 
         return blobs
 
