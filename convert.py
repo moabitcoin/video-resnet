@@ -33,10 +33,17 @@ def r2plus1d_34(num_classes, pretrained=False, progress=False, **kwargs):
     return model
 
 
-def blobs_from_pkl(path):
+def blobs_from_pkl(path, num_classes):
     with path.open(mode="rb") as f:
         pkl = pickle.load(f, encoding="latin1")
-        return pkl["blobs"]
+        blobs = pkl["blobs"]
+
+        assert "last_out_L" + str(num_classes) + "_w" in blobs, \
+            'Number of --classes argument doesnt matche the last linear layer in pkl'
+        assert "last_out_L" + str(num_classes) + "_b" in blobs, \
+            'Number of --classes argument doesnt matche the last linear layer in pkl'
+
+        return blobs
 
 
 def copy_tensor(data, blobs, name):
@@ -161,7 +168,7 @@ def check_canary(model):
 
 
 def main(args):
-    blobs = blobs_from_pkl(args.pkl)
+    blobs = blobs_from_pkl(args.pkl, args.classes)
 
     model = r2plus1d_34(num_classes=args.classes)
 
