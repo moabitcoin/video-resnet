@@ -12,7 +12,7 @@ Official implementation from FB provide pre-trained models as `.pkl` files. You 
 
 ## PyTorch + ONNX Models :trophy:
 
-We also [provide](https://github.com/moabitcoin/ig65m-pytorch/releases) converted `.pth` & `.pb` PyTorch / ONNX weights as artefacts in our Github releases. For models fine-tuned with Kinetics dataset you can use label JSON file included in [here](https://github.com/Showmax/kinetics-downloader/blob/68bd8bc3b9e30da83db9e34cb7d867dcda705cb4/resources/classes.json) with `extract.py` below.
+We also [provide](https://github.com/moabitcoin/ig65m-pytorch/releases) converted `.pth` & `.pb` PyTorch / ONNX weights as artefacts in our Github releases. For models fine-tuned with Kinetics dataset you can use label JSON file included in [here](https://github.com/Showmax/kinetics-downloader/blob/68bd8bc3b9e30da83db9e34cb7d867dcda705cb4/resources/classes.json) with `extract.py` below. 
 
 *Disclaimer*: ONNX models provided here have *NOT* been optimized for inference
 
